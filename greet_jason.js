@@ -27,7 +27,12 @@ figlet.text('Boo!', {
     if (err) {
         console.log('Something went wrong...');
         console.dir(err);
-        return;
+        return;module.exports = function(name){
+            return 'Hello, ' + name;
+        }
+        
+        
+        
     }
     console.log(data);
 });
